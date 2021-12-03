@@ -21,6 +21,7 @@ namespace DeveloperTest.Business
             {
                 JobId = x.JobId,
                 Engineer = x.Engineer,
+                Customer = x.Customer,
                 When = x.When
             }).ToArray();
         }
@@ -31,6 +32,7 @@ namespace DeveloperTest.Business
             {
                 JobId = x.JobId,
                 Engineer = x.Engineer,
+                Customer = x.Customer,
                 When = x.When
             }).SingleOrDefault();
         }
@@ -40,6 +42,7 @@ namespace DeveloperTest.Business
             var addedJob = context.Jobs.Add(new Job
             {
                 Engineer = model.Engineer,
+                Customer = model.Customer,
                 When = model.When
             });
 
@@ -49,6 +52,7 @@ namespace DeveloperTest.Business
             {
                 JobId = addedJob.Entity.JobId,
                 Engineer = addedJob.Entity.Engineer,
+                Customer = addedJob.Entity.Customer,
                 When = addedJob.Entity.When
             };
         }
