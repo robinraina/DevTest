@@ -34,12 +34,4 @@ export class CustomerComponent implements OnInit {
       });
     }
   }
-
-  private selectedLink: string = "Small";
-
-  setradio(e: string): void {
- //   this.newCustomer.type = e;
-   // alert(this.newCustomer.type);
-  } 
-
 }
