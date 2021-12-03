@@ -6,7 +6,8 @@ import { JobModel } from '../models/job.model';
 @Injectable({
   providedIn: 'root'
 })
-export class JobService {
+export class JobService
+{
 
   constructor(private httpClient: HttpClient) { }
 
